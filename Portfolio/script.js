@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {
-            $('.navbar').addClass("sticky");
+            $('.navbar_main').addClass("sticky");
         } else {
-            $('.navbar').removeClass("sticky");
+            $('.navbar_main').removeClass("sticky");
         }
         if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     //toggke menu/navbar script
     $('.menu-btn').click(function () {
-        $('navbar .menu').toggleClass("active");
+        $('navbar_main .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
